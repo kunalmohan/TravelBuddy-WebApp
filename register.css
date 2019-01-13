@@ -11,10 +11,11 @@ body{
 	text-align: center;
 	position: absolute;
 	top: 10%;
-	width: 290px;
-	height: 440px;
+	width: 320px;
+	height: 500px;
 	background-color: white;
   	box-shadow: 0px 0px 5px 2.5px grey;
+  	min-width: 300px;
 }
 
 .head{
@@ -48,6 +49,7 @@ input{
 	border: none;
 	background-color: #D0D1D1;
 	border-radius: 5px;
+	text-transform: capitalize;
 }
 
 input[name="submit"]{
@@ -58,10 +60,45 @@ input[name="submit"]{
 	border-radius: 3px;
 }
 
+input[name="email"]{
+	text-transform: none;
+}
+
+input[name="dob"]{
+	width: 50%;
+	text-transform: none;
+}
+
+input[name="password"]{
+	text-transform: none;
+}
+
+input[name="username"]{
+	text-transform: none;
+}
+
+.gen{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 85%;
+}
+
+.gen div{
+	margin-top: 5px;
+}
+
 .error{
 	color: red;
 	font-size: 14px;
 	text-align: left;
 	width:  100%;
 	padding-left: 4em;
+}
+
+@media screen and (max-width: 330px){
+	.reg{
+		width: 310px;
+		top: 5%;
+	}
 }

@@ -1,12 +1,16 @@
 <?php
 session_start();
+$datedel = date("Y-m-d");
+$sqldel = "DELETE FROM triplist WHERE tripdate<'$datedel';";
+mysqli_query($conn, $sqldel);
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>Login|TravelBuddy</title>
 	<link rel="stylesheet" type="text/css" href="login.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="log">
