@@ -32,7 +32,7 @@ $row = mysqli_fetch_array($result3,MYSQLI_ASSOC);
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
-	<link rel="stylesheet" type="text/css" href="profile.css">
+	<link rel="stylesheet" type="text/css" href="CSS/profile.css">
 </head>
 <body>
 	<div class="bar">
