@@ -235,7 +235,7 @@ $row1 = mysqli_fetch_array($result1, MYSQLI_ASSOC);
           let mth = d.getMonth()+1;
           let yr = d.getFullYear();
           let seldate = yr + '-' + mth + '-' + dat;
-          window.location.href = "http://localhost/project/calendar.php?dispdate=" + seldate;
+          window.location.href = "http://localhost/TravelBuddy-WebApp/calendar.php?dispdate=" + seldate;
         });
       });
     }
@@ -277,9 +277,9 @@ $row1 = mysqli_fetch_array($result1, MYSQLI_ASSOC);
       usr.addEventListener('click', function(){
         let usrname = usr.getAttribute('data-user');
         if(!(datesel == null)){
-          window.location.href = "http://localhost/project/calendar.php?usrname=" + usrname + "&dispdate=" + datesel;
+          window.location.href = "http://localhost/TravelBuddy-WebApp/calendar.php?usrname=" + usrname + "&dispdate=" + datesel;
         }else{
-          window.location.href = "http://localhost/project/calendar.php?usrname=" + usrname; 
+          window.location.href = "http://localhost/TravelBuddy-WebApp/calendar.php?usrname=" + usrname; 
         }
       });
     });
