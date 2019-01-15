@@ -13,7 +13,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     	if(mysqli_query($conn, $sql1)){
     	$_SESSION['error2'] = NULL;
    		echo '<script> alert("Password Updated Successfully!"); window.location="profile.php";</script>';
-   	}
+   	    }
+        else{
+            echo "Password could not be updated".mysqli_error($sql1);
+        }
     }else {
     	$_SESSION['error2'] = "Invalid Old Password!";
     	header("location: profile.php");

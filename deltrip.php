@@ -13,6 +13,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 			if($k == 1){
 				echo "<script> alert('Trip(s) Deleted Successfully!'); window.location='managetrips.php'; </script>";
 			}
+			else{
+				echo "Could not delete trip:".mysqli_error($sql2);
+			}
 		}
 	}
 }

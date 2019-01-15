@@ -14,5 +14,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
    	if(mysqli_query($conn, $sql)){
    		echo "<script> alert('Trip Added Successfully.'); window.location='managetrips.php'; </script>";
    	}
+
+   	else {
+   		echo "Could not add Trip:".mysqli_error($sql);
+   	}
 }
 ?>
