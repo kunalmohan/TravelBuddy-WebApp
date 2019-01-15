@@ -13,7 +13,7 @@ Run the following commands in MySQL to create tables in this database-
     CREATE TABLE members(id INT AUTO_INCREMENT, fname VARCHAR(50), lname VARCHAR(50), dobirth DATE, gender VARCHAR(10), email VARCHAR(50), mobileno VARCHAR(10), username VARCHAR(50), password VARCHAR(50), PRIMARY KEY(id));
     CREATE TABLE triplist(id INT AUTO_INCREMENT, username VARCHAR(50), tripdate DATE, dest VARCHAR(50), descrp VARCHAR(255), PRIMARY KEY(ID));
 
-In “connect.php” you need to enter the database name, username and password (for accessing MySQL tables through PHP) in the respective variables.
+In “connect.php” you need to enter the database name, username and password (for accessing MySQL tables through PHP)(**Note:** The user should have all the privileges for that database) in the respective variables.
 You are now ready to run the webapp.
 
 **About the Project-**
